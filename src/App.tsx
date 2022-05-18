@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import MyButton from './components/button'
 import './App.css';
 
 function App() {
@@ -19,6 +20,18 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <MyButton
+        border = "black"
+        color = "pink"
+        height = "200px"
+        onClick = { () => {
+          console.log("You clicked on the pink circle!")
+        }}
+        radius = "50%"
+        width = "200px"
+        children = "I'm a pink circle!"
+      ></MyButton>
     </div>
   );
 }
